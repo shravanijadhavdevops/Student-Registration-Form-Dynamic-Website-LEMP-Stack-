@@ -4,7 +4,7 @@ This is my first dynamic website, called Student Registration Form.
 In this project, I deployed a dynamic web application using the LEMP stack (Linux, NGINX, MySQL, PHP) on an Amazon Linux EC2 server. The application allows users to fill out a registration form, and the submitted data is stored in a database.
 The project helped me understand how frontend, backend, and database work together in a real-world environment.
 ## Architechture Diagram
-![alt text](<imgs/architect 2.jpeg>)
+![alt text](<imgs/architect_2.jpeg>)
 ## Technologies Used
 * Amazon Linux (EC2)
 * NGINX Web Server
@@ -21,15 +21,15 @@ The project helped me understand how frontend, backend, and database work togeth
 ## Steps I Followed
 ### 1. Launch Amazon Linux Instance<br>
 * Created EC2 instance<br>
-![alt text](<imgs/create a ec2 instance.png>)
+![alt text](<imgs/create_a_ec2_instance.png>)
 * Connected using SSH
-![alt text](<imgs/connect usin ssh.png>)
+![alt text](<imgs/connect_usin_ssh.png>)
 
 ## 2.Install LEMP Stack
 sudo yum update -y<br>
 sudo yum install nginx php php-fpm<br> 
 php-mysqlnd mariadb-server -y<br>
-![alt text](<imgs/instaling packages.png>)
+![alt text](<imgs/instaling_packages.png>)
 
 ## 3.Start Services
 sudo systemctl start nginx<br>
@@ -40,7 +40,7 @@ sudo systemctl enable php-fpm<br>
 
 sudo systemctl start mariadb<br>
 sudo systemctl enable mariadb<br>
-![alt text](<imgs/start services.png>)
+![alt text](<imgs/start_services.png>)
 ## 4.Setup Database
 * Login To MySQL:<br>
 mysql -u root -p <br>
@@ -56,26 +56,26 @@ CREATE TABLE students (<br>
     name VARCHAR(100),<br>
     email VARCHAR(100)<br>
 );<br>
-![alt text](<imgs/create database.png>)
+![alt text](<imgs/create_database.png>)
 
 ## 5.Create Project Files
 * signup.html->for UI
 * submit.php->for backend
-![alt text](<imgs/create project files.png>)
+![alt text](<imgs/create_project_files.png>)
 
 ## 6.Download connector
 sudo yum install php8.5-mysqlnd.x86_64 -y<br>
-![alt text](<imgs/download connector.png>)
+![alt text](<imgs/download_connector.png>)
 
 ## 7.Access Website
 * open browser
 * Enter EC@ public IP
 * Fill The Form->Data stored in database
-![alt text](<imgs/signup.html access.png>)
+![alt text](<imgs/signup.html_access.png>)
 
-![alt text](<imgs/signup.html 2access.png>)
+![alt text](<imgs/signup.html2access.png>)
 
-![alt text](<imgs/database fct.png>)
+![alt text](<imgs/database_fct.png>)
 ## 8.Database Details
 * Database Name : FCT
 * stores:<br>
